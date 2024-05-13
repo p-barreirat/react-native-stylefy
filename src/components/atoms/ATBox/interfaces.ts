@@ -1,4 +1,6 @@
-export default interface ATBoxProps {
+import type { ViewProps } from 'react-native';
+
+export default interface ATBoxProps extends ViewProps {
   children?: any;
   flex?: number;
   background?: string;
@@ -7,4 +9,6 @@ export default interface ATBoxProps {
   direction?: 'row' | 'column';
   align?: 'center' | 'flex-end' | 'flex-start';
   justify?: 'center' | 'flex-end' | 'flex-start';
+  padding?: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | number | string;
+  rounded?: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | number | string;
 }
