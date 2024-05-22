@@ -22,4 +22,12 @@ const RoundedSize = {
   xl: 20,
 };
 
-export default { TextSize, PaddingSize, RoundedSize };
+const Height = {
+  xs: 30,
+  sm: 40,
+  md: 60,
+  lg: 80,
+  xl: 100,
+};
+
+export default { TextSize, PaddingSize, RoundedSize, Height };

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import { Button } from '..';
 import { Eye, EyeClosed } from '../../../assets/svg';
-import { Box, Button, Input, Text } from '../../atoms';
+import { Box, Input, Text } from '../../atoms';
 import type { MLTextInputProps } from './interfaces';
 
 export default function MLTextInput({
@@ -13,7 +14,7 @@ export default function MLTextInput({
   const [isPassword, setIsPassword] = useState(props.secureTextEntry ?? false);
 
   return (
-    <Box rounded={20} padding={10} width={'100%'}>
+    <Box rounded={20} width={'100%'}>
       {label && <Text weight={'bold'}>{label}</Text>}
       <Box padding={'xs'} />
       <Box
@@ -34,6 +35,7 @@ export default function MLTextInput({
         />
         {props.secureTextEntry && (
           <Button
+            height={'auto'}
             onPress={() => {
               setIsPassword(!isPassword);
             }}
