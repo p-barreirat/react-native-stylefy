@@ -1,5 +1,4 @@
-import type { SafeAreaView } from 'react-native';
-
-export default interface ATSafeProps extends SafeAreaView {
+export default interface ATSafeProps {
   children?: any;
+  flex?: number;
 }
