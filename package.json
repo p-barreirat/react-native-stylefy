@@ -1,6 +1,6 @@
 {
   "name": "react-native-stylefy",
-  "version": "0.0.3.1",
+  "version": "0.0.41",
   "description": "A styled components to react native",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",

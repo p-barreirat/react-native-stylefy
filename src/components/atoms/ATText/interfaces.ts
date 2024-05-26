@@ -1,5 +1,5 @@
 export default interface ATTextProps {
-  children: string;
+  children: string | any;
   weight?:
     | 100
     | 200
