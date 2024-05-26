@@ -15,4 +15,5 @@ export default interface ATTextProps {
   type?: 'title' | 'subtitle' | 'body' | 'small';
   color?: string;
   size?: number | 'xs' | 'sm' | 'md' | 'lg' | 'xl';
+  align?: 'center' | 'left' | 'right' | 'justify' | 'start' | 'end';
 }

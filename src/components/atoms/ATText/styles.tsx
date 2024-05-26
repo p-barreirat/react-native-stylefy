@@ -37,6 +37,7 @@ const Text = styled.Text<ATTextProps>`
       : props.type
         ? TextType[props.type].fontSize
         : Config.TextSize.sm}px;
+  text-align: ${(props) => props.align ?? 'start'};
 `;
 
 export { Text };
